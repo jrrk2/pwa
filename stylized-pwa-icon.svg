@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#2C3E50"/>
+  
+  <!-- Grid pattern -->
+  <path d="M0 256 L512 256" stroke="#34495E" stroke-width="2"/>
+  <path d="M256 0 L256 512" stroke="#34495E" stroke-width="2"/>
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#34495E" stroke-width="2"/>
+  <circle cx="256" cy="256" r="120" fill="none" stroke="#34495E" stroke-width="2"/>
+  
+  <!-- Main location marker -->
+  <g transform="translate(256,256) scale(1.2)">
+    <path d="M0 -100c-35 0-65 30-65 65 0 45 65 135 65 135s65-90 65-135c0-35-30-65-65-65zm0 95c-16 0-30-14-30-30s14-30 30-30 30 14 30 30-14 30-30 30z" fill="#3498DB"/>
+    <circle cx="0" cy="-65" r="15" fill="#E74C3C"/>
+  </g>
+</svg>

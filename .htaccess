@@ -1,0 +1,17 @@
+# Force HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Handle service worker scope
+<Files "service-worker.js">
+    Header Set Service-Worker-Allowed "/"
+</Files>
+
+# Proper MIME types
+AddType application/javascript .js
+AddType application/manifest+json .json
+AddType application/manifest+json .webmanifest
+
+# Compression
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json

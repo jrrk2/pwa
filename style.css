@@ -1,0 +1,72 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Location info styles */
+#location-info {
+    padding: 16px;
+}
+
+.location-found {
+    padding: 16px;
+    border-radius: 6px;
+    background-color: #f8fafc;
+}
+
+.status-ok {
+    color: #10b981;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.status-error {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.coordinates {
+    color: #64748b;
+    font-size: 0.875rem;
+    font-family: monospace;
+    margin-top: 8px;
+}
+
+/* Location error styles */
+.location-error {
+    padding: 16px;
+    border-radius: 6px;
+    background-color: #fef2f2;
+    border: 1px solid #fee2e2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    body {
+        padding: 16px;
+    }
+    
+    .container {
+        padding: 16px;
+    }
+}
+
+/* Loading state */
+.loading {
+    color: #64748b;
+    font-style: italic;
+}
